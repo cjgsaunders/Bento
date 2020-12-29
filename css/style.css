@@ -1,8 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
 :root {
     /* Fonts  */
-    --fsg: 150px;
-    --fsm: 85px;
+    /* 
+     time and greeting
+     date 
+     weather
+     links
+    */
+
+    --fsg: 60px;
+    --fsm: 60px;
     --fss: 30px;
     --fses: 18px;
 
@@ -23,15 +30,17 @@
     the resolutionand can be changed and several keywords can be added,
     seperated by a comma and placed inside idividual curly braces */
     
-    /* --imgbg: url(/img/newzealand.jpg);*/
+     /*--imgbg: url(/img/newzealand.jpg); */
 
     
     --imgbg: url(https://source.unsplash.com/featured/3840x2160/?{night});
   
     --imgcol: linear-gradient(
-        rgba(255, 255, 255, 0.0),
-        rgba(255, 255, 255, 0.0)
+        rgba(255, 255, 255, 0.3),
+        rgba(255, 255, 255, 0.3)
     ); 
+
+   
     
     
 }
@@ -49,7 +58,7 @@
     --bg: #1e1f21;
     --sbg: #2c2d31;
     --fg: #d8dee9;
-    --imgcol: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+    --imgcol: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
 }
 
 * {
@@ -66,8 +75,9 @@ body {
     height: 100vh;
     background-color: var(--bg);
     background-image: var(--imgcol), var(--imgbg);
-    /* Add the blur effect */
-    filter: blur(8px);
+    background-size: cover;
+    backdrop-filter: blur(10px);
+    
     display: flex;
     align-items: center;
     justify-content: center;
