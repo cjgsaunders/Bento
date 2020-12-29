@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
 :root {
     /* Fonts  */
-    --fsg: 60px;    /* time and greeting */
-    --fsm: 60px;    /* date */
-    --fss: 30px;    /* weather*/
+    --fsg: 100px;    /* time and greeting */
+    --fsm: 70px;    /* month+date */
+    --fss: 30px;    /* greeting+weather*/
     --fses: 18px;   /* links */
 
     /* Light theme  */
