@@ -26,7 +26,7 @@
     /* --imgbg: url(/img/newzealand.jpg);*/
 
     
-    --imgbg: url(https://source.unsplash.com/featured/3840x2160/?{night};
+    --imgbg: url(https://source.unsplash.com/featured/3840x2160/?{night});
   
     --imgcol: linear-gradient(
         rgba(255, 255, 255, 0.0),
