@@ -66,6 +66,8 @@ body {
     height: 100vh;
     background-color: var(--bg);
     background-image: var(--imgcol), var(--imgbg);
+    /* Add the blur effect */
+    filter: blur(8px);
     display: flex;
     align-items: center;
     justify-content: center;
