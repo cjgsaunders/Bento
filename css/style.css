@@ -1,17 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
 :root {
     /* Fonts  */
-    /* 
-     time and greeting
-     date 
-     weather
-     links
-    */
-
-    --fsg: 60px;
-    --fsm: 60px;
-    --fss: 30px;
-    --fses: 18px;
+    --fsg: 60px;    /* time and greeting */
+    --fsm: 60px;    /* date */
+    --fss: 30px;    /* weather*/
+    --fses: 18px;   /* links */
 
     /* Light theme  */
     --accent: #186efdaa;
@@ -26,11 +19,11 @@
     change the --imgcol value 
     to make the filter to your own */
     
+    /*--imgbg: url(/img/newzealand.jpg); */
+    
     /* image background accesses the unsplash api to grab a random image.
     the resolutionand can be changed and several keywords can be added,
-    seperated by a comma and placed inside idividual curly braces */
-    
-     /*--imgbg: url(/img/newzealand.jpg); */
+    seperated by a comma and placed inside idividual curly braces */   
 
     
     --imgbg: url(https://source.unsplash.com/featured/3840x2160/?{night});
@@ -76,6 +69,10 @@ body {
     background-color: var(--bg);
     background-image: var(--imgcol), var(--imgbg);
     background-size: cover;
+    
+    /* Here blur is added to the background image.
+    as of dec 29 2020, backdrop filter needs to be enabled in firefox settings.
+    other browsers support it nativy already. */
     backdrop-filter: blur(10px);
     
     display: flex;
